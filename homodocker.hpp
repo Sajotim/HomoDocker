@@ -144,7 +144,8 @@ namespace docker {
                               CLONE_NEWNET| // Net   namespace
                               CLONE_NEWUTS| // UTS   namespace
                               CLONE_NEWPID| // PID   namespace
-                              SIGCHLD,
+                              CLONE_NEWIPC| // IPC   namespace       
+                              SIGCHLD
                               this);
 
             // 将veth2转移到容器内部, 并命名为 eth0
